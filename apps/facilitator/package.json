@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "license": "GPL-3.0-only",
+  "packageManager": "pnpm@10.12.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@payfaucet/facilitator": "workspace:^",
+    "@payfaucet/fetch": "workspace:*",
+    "@payfaucet/info": "workspace:^",
+    "@payfaucet/payment-evm": "workspace:^",
+    "@payfaucet/payment-solana": "workspace:^",
+    "@payfaucet/types": "workspace:^",
+    "@payfaucet/x-solana-settlement": "catalog:",
+    "@hono/node-server": "catalog:",
+    "@logtape/logtape": "catalog:",
+    "@solana/kit": "catalog:",
+    "@solana/spl-token": "catalog:",
+    "@solana/web3.js": "catalog:",
+    "arktype": "catalog:",
+    "dotenv": "catalog:",
+    "hono": "catalog:",
+    "viem": "catalog:"
+  },
+  "devDependencies": {
+    "@tapjs/tsx": "catalog:",
+    "tap": "catalog:",
+    "tsx": "catalog:",
+    "typescript-language-server": "catalog:"
+  },
+  "tap": {
+    "plugin": [
+      "@tapjs/tsx",
+      "!@tapjs/typescript"
+    ]
+  }
+}
