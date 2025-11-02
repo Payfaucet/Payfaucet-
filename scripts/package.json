@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "license": "GPL-3.0-only",
+  "packageManager": "pnpm@10.12.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@payfaucet/fetch": "workspace:*",
+    "@payfaucet/info": "workspace:^",
+    "@payfaucet/middleware": "workspace:^",
+    "@payfaucet/payment-evm": "workspace:^",
+    "@payfaucet/payment-solana": "workspace:^",
+    "@payfaucet/types": "workspace:^",
+    "@payfaucet/wallet-crossmint": "workspace:^",
+    "@payfaucet/wallet-evm": "workspace:^",
+    "@payfaucet/wallet-ledger": "workspace:*",
+    "@payfaucet/wallet-solana": "workspace:^",
+    "@payfaucet/wallet-solana-squads": "workspace:^",
+    "@logtape/logtape": "catalog:",
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/platform-express": "^10.0.0",
+    "@payfaucet/x-solana-settlement": "catalog:",
+    "@hono/node-server": "catalog:",
+    "@solana/spl-token": "catalog:",
+    "@solana/web3.js": "catalog:",
+    "@sqds/multisig": "^2.1.4",
+    "bs58": "catalog:",
+    "dotenv": "catalog:",
+    "express": "catalog:",
+    "hono": "catalog:",
+    "reflect-metadata": "^0.1.14",
+    "rxjs": "^7.8.1",
+    "viem": "catalog:"
+  },
+  "devDependencies": {
+    "@tapjs/tsx": "catalog:",
+    "@types/express": "catalog:",
+    "tap": "catalog:",
+    "tsx": "catalog:",
+    "typescript-language-server": "catalog:",
+    "zx": "catalog:"
+  },
+  "tap": {
+    "plugin": [
+      "@tapjs/tsx",
+      "!@tapjs/typescript"
+    ]
+  }
+}
