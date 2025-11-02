@@ -1,0 +1,23 @@
+{
+  "name": "@payfaucet/wallet-ledger",
+  "version": "0.11.0",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "dependencies": {
+    "@payfaucet/types": "workspace:^",
+    "@ledgerhq/hw-app-eth": "^6.36.0",
+    "@ledgerhq/hw-app-solana": "^7.2.0",
+    "@ledgerhq/hw-transport": "^6.31.0",
+    "@ledgerhq/hw-transport-node-hid": "^6.29.0",
+    "@ledgerhq/hw-transport-webusb": "^6.29.0",
+    "@logtape/logtape": "catalog:",
+    "@solana/web3.js": "catalog:",
+    "arktype": "catalog:",
+    "viem": "catalog:"
+  },
+  "devDependencies": {
+    "tsc-esm-fix": "catalog:",
+    "typescript": "catalog:"
+  }
+}

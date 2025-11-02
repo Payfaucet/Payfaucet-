@@ -1,0 +1,32 @@
+{
+  "name": "@payfaucet/wallet-solana-squads",
+  "version": "0.11.0",
+  "license": "LGPL-3.0-only",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "@eslint/js": "catalog:",
+    "@payfaucet/fetch": "workspace:^",
+    "@tapjs/asserts": "catalog:",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "tap": "catalog:",
+    "tsc-esm-fix": "catalog:",
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:",
+    "typescript-language-server": "catalog:"
+  },
+  "dependencies": {
+    "@payfaucet/types": "workspace:^",
+    "@logtape/logtape": "catalog:",
+    "@solana/web3.js": "catalog:",
+    "@sqds/multisig": "^2.1.4",
+    "bs58": "catalog:",
+    "fastestsmallesttextencoderdecoder": "^1.0.22"
+  }
+}

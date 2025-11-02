@@ -1,0 +1,37 @@
+{
+  "name": "@payfaucet/payment-evm",
+  "version": "0.11.0",
+  "license": "LGPL-3.0-only",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./exact": {
+      "require": "./dist/src/exact/index.js",
+      "import": "./dist/src/exact/index.js",
+      "types": "./dist/src/exact/index.d.ts"
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "catalog:",
+    "@tapjs/asserts": "catalog:",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "tap": "catalog:",
+    "tsc-esm-fix": "catalog:",
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:",
+    "typescript-language-server": "catalog:"
+  },
+  "dependencies": {
+    "@payfaucet/info": "workspace:^",
+    "@payfaucet/types": "workspace:^",
+    "arktype": "catalog:",
+    "viem": "catalog:"
+  }
+}
